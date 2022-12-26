@@ -6,15 +6,15 @@ It is a social network for developers. The components include:
 
 ## Package Used:
 
-concurrently
-config
-express
-[express-validator](https://express-validator.github.io/docs/): Validate request body has necessary information and are in expected format.
-gravatar
-mongoose
-nodemon
-request
-bcryptjs
+- concurrently
+- config
+- express
+- [express-validator](https://express-validator.github.io/docs/): Validate request body has necessary information and are in expected format.
+- gravatar
+- mongoose
+- nodemon
+- request
+- bcryptjs
 
 ## Common issues:
 
