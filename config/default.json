@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://m001-student:m001-mongodb-basics@merndevcluster.vtbiqb0.mongodb.net/?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://m001-student:m001-mongodb-basics@merndevcluster.vtbiqb0.mongodb.net/?retryWrites=true&w=majority",
+  "jwtSecret": "mycretetoken"
 }
