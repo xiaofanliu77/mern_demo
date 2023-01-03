@@ -15,6 +15,7 @@ It is a social network for developers. The components include:
 - nodemon
 - request
 - bcryptjs
+- jsonwebtoken:
 
 ## Common issues:
 
