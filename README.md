@@ -4,6 +4,10 @@
 
 It is a social network for developers. The components include:
 
+1. MongoDB database and setting up its connection using mongoose.
+2. Allow users to register account with email and password. Generate and verify a user is already logged in using json web token.
+3. Setting up profile schema as a MongoDB model. Get profile for the currently logged in user. Register a profile.
+
 ## Package Used:
 
 - concurrently
