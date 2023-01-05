@@ -16,7 +16,7 @@ It is a social network for developers. The components include:
 - [express-validator](https://express-validator.github.io/docs/): Validate request body has necessary information and are in expected format.
 - gravatar
 - mongoose
-- nodemon
+- [nodemon](https://www.npmjs.com/package/nodemon): A tool that allows restarting the node application when file changes. Makes it easier in a development env.
 - request
 - bcryptjs
 - jsonwebtoken:
