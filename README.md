@@ -17,7 +17,7 @@ It is a social network for developers. The components include:
 - gravatar
 - mongoose
 - [nodemon](https://www.npmjs.com/package/nodemon): A tool that allows restarting the node application when file changes. Makes it easier in a development env.
-- request
+- [request](https://www.npmjs.com/package/request?activeTab=readme): A simple tool to make HTTP calls. It has been deprecated in 2020.
 - bcryptjs
 - jsonwebtoken:
 
