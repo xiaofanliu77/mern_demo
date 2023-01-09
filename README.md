@@ -25,3 +25,4 @@ It is a social network for developers. The components include:
 
 1. On Mac Monterry or later, port 5000 is occupied by ControlCe (Control Center). We cannot use that port for development. To find out what's using a particular port, run `lsof -i tcp:5000` (check what's using port 5000). To stop ControlCe process, we need to turn off AirPlay Receive in Settings, under "Sharing". [Credit](https://developer.apple.com/forums/thread/682332)
 2. Sometimes a crashed process would continue occupying a port. We can run the commond above to check, then run `kill -9 44475` to kill that process whose PID is 44475.
+3. Usage of .gitignore. If certain files or path are added to .gitignore file after they have been pushed to the repo, they will not delete themselves automatically. We need to manually remove them by running `git rm -rf --cached`, then re-push.
