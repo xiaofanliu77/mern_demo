@@ -24,7 +24,7 @@ It is a social network for developers. The components include:
 - redux
 - redux-thunk
 - redux-devtools-extension
-- react-router-dom
+- [react-router-dom](https://www.geeksforgeeks.org/what-is-react-router-dom/): An npm package that allows you to implement dynamic routing in a web app.
 - react-redux
 - moment: date and time library
 - react-moment
