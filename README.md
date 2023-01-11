@@ -20,7 +20,7 @@ It is a social network for developers. The components include:
 - [request](https://www.npmjs.com/package/request?activeTab=readme): A simple tool to make HTTP calls. It has been deprecated in 2020.
 - bcryptjs
 - jsonwebtoken:
-- [axios](https://www.npmjs.com/package/axios)
+- [axios](https://www.npmjs.com/package/axios): Promise based HTTP client for node.js
 - redux
 - redux-thunk
 - redux-devtools-extension
