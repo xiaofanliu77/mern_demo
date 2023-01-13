@@ -28,6 +28,7 @@ It is a social network for developers. The components include:
 - react-redux
 - moment: date and time library
 - react-moment
+- [uuid](https://www.npmjs.com/package/uuid): Generate a random UUID. We use v4 from uuid in this project.
 
 ## Common issues:
 
