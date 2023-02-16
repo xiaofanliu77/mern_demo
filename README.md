@@ -8,6 +8,10 @@ It is a social network for developers. The components include:
 2. Allow users to register account with email and password. Generate and verify a user is already logged in using json web token.
 3. Setting up profile schema as a MongoDB model. Get profile for the currently logged in user. Register a profile. Get all profiles
 
+# How to use
+
+Run `npm run dev` to start front and back end at the same time, thanks to the convenient tool "concurrently".
+
 ## Package Used:
 
 - [concurrently](https://www.npmjs.com/package/concurrently): Run multiple commands at the same time. Set up the scripts in `package.json`, use double quotes for each command. Then run all of them with one command.
@@ -29,6 +33,7 @@ It is a social network for developers. The components include:
 - moment: date and time library
 - react-moment
 - [uuid](https://www.npmjs.com/package/uuid): Generate a random UUID. We use v4 from uuid in this project.
+- [prop-types](https://www.freecodecamp.org/news/how-to-use-proptypes-in-react/): Part of React that checks the type of a component. Useful for debugging.
 
 ## Common issues:
 
