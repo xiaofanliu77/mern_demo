@@ -8,7 +8,7 @@ It is a social network for developers. The components include:
 2. Allow users to register account with email and password. Generate and verify a user is already logged in using json web token.
 3. Setting up profile schema as a MongoDB model. Get profile for the currently logged in user. Register a profile. Get all profiles
 
-# How to use
+## How to use
 
 Run `npm run dev` to start front and back end at the same time, thanks to the convenient tool "concurrently".
 
