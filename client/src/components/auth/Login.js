@@ -5,15 +5,20 @@ import PropTypes from "prop-types";
 import { login } from "../../actions/auth";
 
 const Login = ({ login, isAuthenticated }) => {
+  //useState is a hook that lets you use state in a functional component
+  //this declares a new state variable "formData" and its initial values (2 objects)
+  //[] is array destructuring. It assigns returned values from useState to the 2 variables
   const [formData, setFormData] = useState({
     email: "",
     password: "",
   });
 
-  //direct access to state using hooks
+  //destructuring for easy access to email and password
+  //so you don't have to say formData.email every time.
   const { email, password } = formData;
 
-  //handle the change
+  //change event handler
+  //e is short for event
   const onChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
@@ -43,8 +48,8 @@ const Login = ({ login, isAuthenticated }) => {
             type="email"
             placeholder="Email Address"
             name="email"
-            value={email}
-            onChange={(e) => onChange(e)}
+            value={email} //value always equal to the emaill object in state
+            onChange={(e) => onChange(e)} //this calls the changeEventHandler
             required
           />
         </div>
@@ -73,6 +78,7 @@ Login.PropTypes = {
   isAuthenticated: PropTypes.bool,
 };
 
+// note here it returns an object, not a function, so we need to wrap the {} within a ()
 const mapStateToProps = (state) => ({
   isAuthenticated: state.auth.isAuthenticated,
 });
