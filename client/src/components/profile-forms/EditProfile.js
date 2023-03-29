@@ -27,6 +27,8 @@ const EditProfile = ({
   // To have more states, just write another useState()
   const [displaySocialInputs, toggleSocialInputs] = useState(false);
 
+  // useEffect hook is similar to componentDidMount and componentDidUpdate
+  // it is basically a side effects that runs when the page loads
   useEffect(() => {
     getCurrentProfile();
     setFormData({
@@ -248,7 +250,7 @@ const EditProfile = ({
 };
 
 EditProfile.propTypes = {
-  createProfile: PropTypes.object.isRequired,
+  createProfile: PropTypes.func.isRequired,
   profile: PropTypes.object.isRequired,
   getCurrentProfile: PropTypes.func.isRequired,
 };

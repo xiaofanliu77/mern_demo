@@ -7,6 +7,7 @@ import Login from "./components/auth/Login";
 import Dashboard from "./components/dashboard/Dashboard";
 import CreateProfile from "./components/profile-forms/CreateProfile";
 import EditProfile from "./components/profile-forms/EditProfile";
+import AddExperience from "./components/profile-forms/AddExperience";
 import PrivateRoute from "./components/routing/PrivateRoute";
 
 import "./App.css";
@@ -34,13 +35,13 @@ const App = () => {
         <Navbar />
         <Fragment>
           <Routes>
-            <Route exact path="/" element={<Landing />} />
+            <Route path="/" element={<Landing />} />
           </Routes>
           <section className="container">
             <Alert />
             <Routes>
-              <Route exact path="/register" element={<Register />} />
-              <Route exact path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} />
+              <Route path="/login" element={<Login />} />
               {/* PrivateRoute forces to log in in order to see this page */}
               {/* Inside this Route Component, we have an element which has PrivateRoute as a Component
               the PrivateRoute component takes a parameter called component,
@@ -56,6 +57,10 @@ const App = () => {
               <Route
                 path="/edit-profile"
                 element={<PrivateRoute component={EditProfile} />}
+              />
+              <Route
+                path="/add-experience"
+                element={<PrivateRoute component={AddExperience} />}
               />
             </Routes>
           </section>
