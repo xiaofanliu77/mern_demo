@@ -223,7 +223,7 @@ const CreateProfile = ({ createProfile, history }) => {
 };
 
 CreateProfile.propTypes = {
-  createProfile: PropTypes.object.isRequired,
+  createProfile: PropTypes.func.isRequired,
 };
 
 //withRouter passes in the history object?

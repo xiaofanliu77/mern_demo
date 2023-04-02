@@ -8,6 +8,7 @@ import Dashboard from "./components/dashboard/Dashboard";
 import CreateProfile from "./components/profile-forms/CreateProfile";
 import EditProfile from "./components/profile-forms/EditProfile";
 import AddExperience from "./components/profile-forms/AddExperience";
+import AddEducation from "./components/profile-forms/AddEducation";
 import PrivateRoute from "./components/routing/PrivateRoute";
 
 import "./App.css";
@@ -34,12 +35,12 @@ const App = () => {
       <Router>
         <Navbar />
         <Fragment>
-          <Routes>
+          <Routes suppressNoMatchWarning={true}>
             <Route path="/" element={<Landing />} />
           </Routes>
           <section className="container">
             <Alert />
-            <Routes>
+            <Routes suppressNoMatchWarning={true}>
               <Route path="/register" element={<Register />} />
               <Route path="/login" element={<Login />} />
               {/* PrivateRoute forces to log in in order to see this page */}
@@ -61,6 +62,10 @@ const App = () => {
               <Route
                 path="/add-experience"
                 element={<PrivateRoute component={AddExperience} />}
+              />
+              <Route
+                path="/add-education"
+                element={<PrivateRoute component={AddEducation} />}
               />
             </Routes>
           </section>
