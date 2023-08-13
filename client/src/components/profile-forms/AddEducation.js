@@ -91,7 +91,7 @@ const AddEducation = ({ addEducation }) => {
                 toggleDisabled(!toDateDisabled);
               }}
             />{" "}
-            Current Job
+            Current School
           </p>
         </div>
         {/* We do not need a to date if it is the current job */}

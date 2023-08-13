@@ -9,6 +9,8 @@ import CreateProfile from "./components/profile-forms/CreateProfile";
 import EditProfile from "./components/profile-forms/EditProfile";
 import AddExperience from "./components/profile-forms/AddExperience";
 import AddEducation from "./components/profile-forms/AddEducation";
+import Profiles from "./components/profiles/Profiles";
+import Profile from "./components/profile/Profile";
 import PrivateRoute from "./components/routing/PrivateRoute";
 
 import "./App.css";
@@ -43,6 +45,8 @@ const App = () => {
             <Routes suppressNoMatchWarning={true}>
               <Route path="/register" element={<Register />} />
               <Route path="/login" element={<Login />} />
+              <Route path="/profiles" element={<Profiles />} />
+              <Route path="/profile/:id" element={<Profile />} />
               {/* PrivateRoute forces to log in in order to see this page */}
               {/* Inside this Route Component, we have an element which has PrivateRoute as a Component
               the PrivateRoute component takes a parameter called component,
