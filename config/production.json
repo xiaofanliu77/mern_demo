@@ -1,0 +1,7 @@
+{
+  "mongoURI": "mongodb+srv://m001-student:m001-mongodb-basics@merndevcluster.vtbiqb0.mongodb.net/?retryWrites=true&w=majority",
+  "jwtSecret": "mycretetoken",
+  "githubClientId": "02d2bcd48a2eb8fe2328",
+  "githubSecret": "6bcf336a9020e122095cd12808ae3d21991b76c1",
+  "githubToken": "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"
+}
